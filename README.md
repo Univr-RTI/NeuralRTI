@@ -48,7 +48,7 @@ python test.py --model_files exampledataset/model_files --light_dir exampledatas
 ***********  How to train NeuralRTI on other datasets?
 
 If you want to run this code on other dataset, please first arrange your dataset in the same manner of our example dataset. The required files are:
-- images (any format)
+- Images (any format)
 - lights (named dirs.lp)
 please don't forget to arrange the light direction file. 
 
