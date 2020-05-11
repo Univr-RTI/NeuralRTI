@@ -43,7 +43,7 @@ python test.py --model_files [data-path]/model-files --light_dir [path to light 
 
 ******************************* example ***********************************************************
 
-python test.py --model_files exampledataset/model-files --light_dir exampledataset/test_lightdirs
+python test.py --model_files exampledataset/model_files --light_dir exampledataset/test_lightdirs
 
 ***********  How to train NeuralRTI on other datasets?
 
