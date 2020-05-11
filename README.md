@@ -53,7 +53,7 @@ If you want to run this code on other dataset, please first arrange your dataset
 please don't forget to arrange the light direction file. 
 
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
 
 ******** Acknowledgments *************************
 This work was supported by the DSURF (PRIN 2015) project funded by the Italian Ministry of University and Research and by the MIUR Excellence Departments 2018-2022.
