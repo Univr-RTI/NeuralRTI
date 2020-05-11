@@ -24,6 +24,7 @@ Tested on:
 **************** Running training *********************************************** 
 
 For training NeuralRTI (on one of our benchmark dataset), please download the dataset from ... and extract it anywhere. 
+
 Then run the following script:
 
 python train.py --data_path [data-path]
