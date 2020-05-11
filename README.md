@@ -23,7 +23,7 @@ Tested on:
 
 **************** Running training *********************************************** 
 
-For training NeuralRTI (on one of our benchmark dataset), please download the dataset from [SynthRTI](https://github.com/Univr-RTI/SynthRTI),[RealRTI](https://github.com/Univr-RTI/RealRTIRTI) and extract it anywhere. 
+For training NeuralRTI (on one of our benchmark dataset), please download Synthetic dataset from [SynthRTI](https://github.com/Univr-RTI/SynthRTI), and Real datset from [RealRTI](https://github.com/Univr-RTI/RealRTI) and extract it anywhere. 
 
 Then run the following script:
 
