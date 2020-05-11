@@ -24,10 +24,10 @@ Tested on:
 For training NeuralRTI (on one of our benchmark dataset), please download the dataset from ... and extract it anywhere. Then run the following script
 python train.py --data_path [data-path]
 
-################### example ##########################################################
+**************************** example ***************************************************
 python train.py --data_path exampledataset
 
-# You can find the output (the encoded npy file, header info(min,max, height and width of image), decoder model and decoder model converted into json file) in exampledataset/model-files
+******* You can find the output (the encoded npy file, header info(min,max, height and width of image), decoder model and decoder model converted into json file) in exampledataset/model-files
 
 
 
