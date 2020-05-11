@@ -19,7 +19,7 @@ This is a Keras implementation of a NeuralRTI, a pixel based encoding and religh
 - glob (used for reading out a list of images)
 
 Tested on:
-- Ubuntu 16.04/17.10/18.04, Python 3.5.2, Keras 2.0.3, Tensorflow(-gpu) 1.0.1
+- Ubuntu 16.04/17.10/18.04, Python 3.5.2, Keras 2.3.1, Tensorflow(-gpu) 2.1.0
 
 **************** Running training *********************************************** 
 
