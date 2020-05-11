@@ -21,8 +21,10 @@ This is a Keras implementation of a NeuralRTI, a pixel based encoding and religh
 Tested on:
 - Ubuntu 16.04/17.10/18.04, Python 3.5.2, Keras 2.0.3, Tensorflow(-gpu) 1.0.1
 
-**************** Running training ***********************************************
-For training NeuralRTI (on one of our benchmark dataset), please download the dataset from ... and extract it anywhere. Then run the following script
+**************** Running training *********************************************** 
+
+For training NeuralRTI (on one of our benchmark dataset), please download the dataset from ... and extract it anywhere. 
+Then run the following script:
 python train.py --data_path [data-path]
 
 **************************** example ***************************************************
