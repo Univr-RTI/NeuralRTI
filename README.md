@@ -25,6 +25,7 @@ Tested on:
 
 For training NeuralRTI (on one of our benchmark dataset), please download the dataset from ... and extract it anywhere. 
 Then run the following script:
+
 python train.py --data_path [data-path]
 
 **************************** example ***************************************************
@@ -35,10 +36,11 @@ python train.py --data_path exampledataset
 
 
 ************** Testing, relighting from different light directions **********************************
+
 python test.py --model_files [data-path]/model-files --light_dir [path to light directions]
 
-#****************************** example ***********************************************************
-
+******************************* example ***********************************************************
+python test.py --model_files exampledataset/model-files --light_dir exampledataset/test_lightdirs
 
 ***********  How to train NeuralRTI on other datasets?
 If you want to run this code on other dataset, please first arrange your dataset in the same manner of our example dataset. The required files are
