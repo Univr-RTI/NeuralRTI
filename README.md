@@ -20,7 +20,8 @@ This is a Keras implementation of a NeuralRTI, a pixel based encoding and religh
 
 Tested on:
 - Ubuntu 16.04/17.10/18.04, Python 3.5.2, Keras 2.0.3, Tensorflow(-gpu) 1.0.1
-### Running training
+
+**************** Running training ***********************************************
 For training NeuralRTI (on one of our benchmark dataset), please download the dataset from ... and extract it anywhere. Then run the following script
 python train.py --data_path [data-path]
 
@@ -34,11 +35,10 @@ python train.py --data_path exampledataset
 ************** Testing, relighting from different light directions **********************************
 python test.py --model_files [data-path]/model-files --light_dir [path to light directions]
 
-############################## example ####################################################
-python test.py --model_files exampledataset/model-files --light_dir exampledataset/test_lightdirs
+#****************************** example ***********************************************************
 
 
-#### Q1: How to train NeuralRTI on other datasets?
+***********  How to train NeuralRTI on other datasets?
 If you want to run this code on other dataset, please first arrange your dataset in the same manner of our example dataset. The required files are
 - images (any format)
 - lights (named dirs.lp)
@@ -47,7 +47,7 @@ please don't forget to arrange the light direction file.
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+******** Acknowledgments *************************
 This work was supported by the DSURF (PRIN 2015) project funded by the Italian Ministry of University and Research and by the MIUR Excellence Departments 2018-2022.
 
 
