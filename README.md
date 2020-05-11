@@ -23,7 +23,7 @@ Tested on:
 
 **************** Running training *********************************************** 
 
-For training NeuralRTI (on one of our benchmark dataset), please download the dataset from ... and extract it anywhere. 
+For training NeuralRTI (on one of our benchmark dataset), please download the dataset from [SynthRTI](http://www.gychen.org),[RealRTI]  and extract it anywhere. 
 
 Then run the following script:
 
