@@ -29,6 +29,7 @@ Then run the following script:
 python train.py --data_path [data-path]
 
 **************************** example ***************************************************
+
 python train.py --data_path exampledataset
 
 ******* You can find the output (the encoded npy file, header info(min,max, height and width of image), decoder model and decoder model converted into json file) in exampledataset/model-files
@@ -40,10 +41,12 @@ python train.py --data_path exampledataset
 python test.py --model_files [data-path]/model-files --light_dir [path to light directions]
 
 ******************************* example ***********************************************************
+
 python test.py --model_files exampledataset/model-files --light_dir exampledataset/test_lightdirs
 
 ***********  How to train NeuralRTI on other datasets?
-If you want to run this code on other dataset, please first arrange your dataset in the same manner of our example dataset. The required files are
+
+If you want to run this code on other dataset, please first arrange your dataset in the same manner of our example dataset. The required files are:
 - images (any format)
 - lights (named dirs.lp)
 please don't forget to arrange the light direction file. 
