@@ -19,9 +19,7 @@ This is a Keras implementation of a NeuralRTI, a pixel based encoding and religh
 - glob (used for reading out a list of images)
 
 Tested on:
-- Ubuntu 16.04/17.10/18.04, Python 3.5.2, Keras 2.0.3, Tensorflow(-gpu) 1.0.1, Theano 0.9.0, CUDA 8.0, cuDNN 5.0
-  - CPU: Intel® Xeon(R) CPU E5-1650 v4 @ 3.60GHz × 12 , GPU: 3x GeForce GTX1080Ti, Memory 64GB
-
+- Ubuntu 16.04/17.10/18.04, Python 3.5.2, Keras 2.0.3, Tensorflow(-gpu) 1.0.1
 ### Running training
 For training NeuralRTI (on one of our benchmark dataset), please download the dataset from ... and extract it anywhere. Then run the following script
 python train.py --data_path [data-path]
@@ -38,13 +36,6 @@ python test.py --model_files [data-path]/model-files --light_dir [path to light 
 
 ############################## example ####################################################
 python test.py --model_files exampledataset/model-files --light_dir exampledataset/test_lightdirs
-
-
-<img src="webimage/img000.png" width="300">
-
-The final result [Mean] is the error about the averaged surface normal over normals predicted from K (K=10 in this case) differently rotated observation maps (See details in my paper). Finally, you will get the predicted surface normal map and the error map.
-
-<img src="webimage/img001.png" width="600">
 
 
 #### Q1: How to train NeuralRTI on other datasets?
