@@ -3,7 +3,7 @@
 Neural Reflectance Transformation Imaging, CGI 2020
 Tinsae Gebrechristos Dulecha,  Filippo Andrea Fanni, Federico Ponchio, Fabio Pellacini and Andrea Giachetti.
 
-
+<iframe width="1210" height="551" src="https://www.youtube.com/embed/Try-izE6nvk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Getting Started
 
