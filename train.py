@@ -13,6 +13,7 @@ import gc
 import cv2
 import tensorflowjs as tfjs
 import argparse
+import json
 keras.layers.BatchNormalization(axis=-1, momentum=0.99, epsilon=0.001, center=True, scale=True,
                                 beta_initializer='zeros', gamma_initializer='ones', moving_mean_initializer='zeros',
                                 moving_variance_initializer='ones', beta_regularizer=None, gamma_regularizer=None,
@@ -69,19 +70,10 @@ def fit_NeuralRTI(data_path):
     nShape = np.shape(image1)
     height = nShape[0]
     width = nShape[1]
-    # cv2_img=cv2.imread(filenames[len(filenames)-1],1)
-    # # cv2.namedWindow("input image")
-    # #
-    # cv2.imshow('input image',cv2_img)
-    # cv2.waitKey(0)
-    # cv2.destroyAllWindows()
-
     gtpixvals, Inpixvals, Inldirs = caph.compute_aph(filenames, 1, 0, L)
     l = len(filenames)
     config = tf.compat.v1.ConfigProto(allow_soft_placement=True)
-    # 原版 sess = tf.Session(config=config)
     sess = tf.compat.v1.Session(config=config)
-
     # config = tf.ConfigProto()
     config.gpu_options.allocator_type = 'BFC'
     # # # Don't pre-allocate memory; allocate as-needed
@@ -110,13 +102,26 @@ def fit_NeuralRTI(data_path):
 
     _, ftimg, _ = caph.compute_aph(filenames, 1, 1)  # groundtruthimage, fitted images, relighting light dirn
     encoded = encoder.predict(ftimg)  # encode
-
+    
+    ### save header file as numpy file  
     minv = np.amin(encoded)
     maxv = np.amax(encoded)
     header_file[0, 0] = minv
     header_file[0, 1] = maxv
     header_file[0, 2] = height
     header_file[0, 3] = width
+    
+    ### save header file in json format   
+    header_info = {}
+
+    # add a team member
+    header_info['min'] = minv
+    header_info['max'] = maxv
+    header_info['height'] = height
+    header_info['width'] = width
+
+    with open(model_savedir + 'header.json', 'w') as f:
+        json.dump(str(header_info), f)
 
     nv = (255 * (encoded - minv)) / (maxv - minv)
     nv = nv.astype('uint8')
